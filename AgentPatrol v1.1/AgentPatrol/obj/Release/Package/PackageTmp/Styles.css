@@ -33,7 +33,7 @@
 
 
 .colorbar {
-    width: 85%;
+    width: 95%;
     color: #1966ba;
     background-color: #1966ba;
     display: block;
@@ -46,17 +46,77 @@
 
 .container {
     display: table;
-    width: 100%;
 }
 
 .left-half {
     position: absolute;
-    left: 10%;
-    width: 40%;
+    display: block;
+    left: 4%;
+    width: 45%;
+    height: 60%;
+    /*background-color: chartreuse;*/
 }
 
 .right-half {
     position: absolute;
-    right: 10%;
-    width: 40%;
+    display: block;
+    right: 4%;
+    width: 45%;
+    /*background-color: mediumpurple;*/
+}
+
+.bottom {
+    position: absolute;
+    display: block;
+    top:80%;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
+    /*background-color: aqua;*/
+}
+
+.centerMe{
+    position:center;
+    border:solid 5px #135093;
+}
+
+.blockView {
+    width: 45vw;
+    height: 60vh;
+    /*border-width: 5px;
+    border-color: #135093;
+    border: solid;
+    background-color: #0d4072;*/
+}
+
+.blockViewAgent {
+    background-color: #5686BA;
+    border: solid 5px #1966ba;
+    display: grid;
+}
+
+.blockViewOpenSpace {
+    border: solid 1px #282828;
+    background-color: #e1e1e1;
+    display: grid;
+}
+
+.blockViewVisitedSpace {
+    border: solid 1px #282828;
+    background-color: #db5353;
+    display: grid;
+}
+
+.blockViewClosedSpace {
+    border: solid 1px #282828;
+    background-color: #1E1E1E;
+    display: grid;
+}
+
+.graphView {
+    width: 45vw;
+    height: 60vh;
+    border-width: 5px;
+    border-color: #135093;
+    background-color: #0d4072;
 }

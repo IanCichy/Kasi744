@@ -14,16 +14,14 @@
     </asp:ContentPlaceHolder>
 
 </head>
-<body>
+<body onresize="getPageSize();" >
     <div class="header">
         <div id="header_title">
             Multi-Agent Patrolling
         </div>
-
         <p class="colorbar">color </p>
-
-
     </div>
+
     <div>
         <asp:ContentPlaceHolder ID="body" runat="server">
         </asp:ContentPlaceHolder>

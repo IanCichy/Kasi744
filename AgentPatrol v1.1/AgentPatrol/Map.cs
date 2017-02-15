@@ -8,40 +8,35 @@ public class Map
     private Tile[,] Tiles;
     //private List<Agent> Agents;
     private Region[] Regions;
-    private int width, height, size, openTiles, regionCount, agentCount;
+    private int width, height, openTiles, regionCount, agentCount;
     private Panel container;
     private Random rnd = new Random();
-
 
     /*
      * Inputs: 
      *      int[,] M  - A map file for input
      *      int s - the size of each tile in the view
      */
-    public Map(int w, int h, int numRegions, Region[] tileRegions, int[,] M, int s)
+    public Map(int w, int h, int numRegions, Region[] tileRegions, int[,] M)
     {
         openTiles = 0;
         regionCount = numRegions;
-        width = M.GetLength(0);
-        height = M.GetLength(1);
-        size = s;
+        height = h;
+        width = w;
 
         Regions = tileRegions;
-        //Agents = new List<Agent>();
-        Tiles = new Tile[width, height];
-
+        Tiles = new Tile[height, width];
         container = new Panel();
-        container.Width = width * size;
-        container.BorderColor = Color.FromArgb(19, 80 , 147);
-        container.BorderWidth = 5;
+        container.CssClass = "centerMe";
 
-        for (int i = 0; i < width; i++)
+
+        for (int i = 0; i < height; i++)
         {
-            for (int t = 0; t < height; t++)
+            for (int t = 0; t < width; t++)
             {
                 if (M[i, t] == 0)
                     openTiles++;
-                Tile tle = new Tile(M[i, t], i, t, size);
+                Tile tle = new Tile(M[i, t], i, t);
                 Tiles[i, t] = tle;
                 container.Controls.Add(tle.getDisplay());
             }
@@ -57,18 +52,13 @@ public class Map
         //Color the Basic Tiles
         foreach (Tile t in Tiles)
         {
-            Color col = Color.White;
             if (t.getType() == 0)
-            {
-                if (t.isSeen() == true)
-                    col = Color.FromArgb(215, 55, 55);//Red
-                else
-                    col = Color.White;
-            }
+                t.getTile().getDisplay().CssClass = "blockViewOpenSpace";
             else if (t.getType() == 1)
-                col = Color.FromArgb(30, 30, 30);//Black
-
-            t.getTile().getDisplay().BackColor = col;
+                t.getTile().getDisplay().CssClass = "blockViewClosedSpace";
+            else if (t.getType() == 2)
+                t.getTile().getDisplay().CssClass = "blockViewVisitedSpace";
+            t.getTile().getDisplay().Text = "";
         }
 
         //Color the Agents Blue
@@ -78,8 +68,13 @@ public class Map
             {
                 int xl = a.getLocation().X;
                 int yl = a.getLocation().Y;
-                Tiles[xl, yl].getTile().getDisplay().BackColor = Color.FromArgb(55, 125, 215);//Blue
-                Tiles[xl, yl].setSeen(true);
+                Tiles[xl, yl].getTile().getDisplay().CssClass = "blockViewAgent";
+
+                if (Tiles[xl, yl].getTile().getDisplay().Text.Equals(""))
+                    Tiles[xl, yl].getTile().getDisplay().Text = "1";
+                else
+                    Tiles[xl, yl].getTile().getDisplay().Text = (int.Parse(Tiles[xl, yl].getTile().getDisplay().Text) + 1) + "";
+                Tiles[xl, yl].setType(2);
             }
         }
     }
@@ -111,12 +106,14 @@ public class Map
     {
         int[] rowNbr = new int[] { -1, 1, 0, 0 };
         int[] colNbr = new int[] { 0, 0, -1, 1 };
+
         foreach (Region r in Regions)
         {
             foreach (Agent a in r.getAgents())
             {
                 int k = rnd.Next(0, 4);
                 Point p = new Point(a.getLocation().X + rowNbr[k], a.getLocation().Y + colNbr[k]);
+
                 if (r.getLocations().Contains(p))
                 {
                     a.setLocation(p);
@@ -127,14 +124,33 @@ public class Map
     }
 
 
-
-
+    public void nStepAlgorithm(int n)
+    {
+        for (int x = 0; x < n; x++)
+        {
+            oneStepAlgorithm();
+        }
+    }
 
     public void setTileType(int x, int y, int type)
     {
         Tiles[x, y].setType(type);
         colorMap();
     }
+
+    public void setMapSize(int w, int h)
+    {
+        int adjW = (int)((w * .45) / width);
+        int adjH = (int)((h * .6) / height);
+        int size = Math.Min(adjW, adjH);
+        foreach (Tile t in Tiles)
+        {
+            t.setSize(size, size);
+        }
+        container.Width = size * width;
+        container.Height = size * height;
+    }
+
 
     #region get/set Methods
     public Map getMap()
@@ -166,6 +182,7 @@ public class Map
     {
         return regionCount;
     }
+
     #endregion get/set Methods
 
 }

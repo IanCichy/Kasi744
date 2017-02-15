@@ -12,31 +12,67 @@
 public partial class Cardinals {
     
     /// <summary>
-    /// ScriptManager control.
+    /// ScriptManager1 control.
     /// </summary>
     /// <remarks>
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.ScriptManager ScriptManager;
+    protected global::System.Web.UI.ScriptManager ScriptManager1;
     
     /// <summary>
-    /// Container control.
+    /// PageWidth control.
     /// </summary>
     /// <remarks>
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.UpdatePanel Container;
+    protected global::System.Web.UI.WebControls.TextBox PageWidth;
     
     /// <summary>
-    /// MapContainer control.
+    /// PageHeight control.
     /// </summary>
     /// <remarks>
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Panel MapContainer;
+    protected global::System.Web.UI.WebControls.TextBox PageHeight;
+    
+    /// <summary>
+    /// GraphView control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.UpdatePanel GraphView;
+    
+    /// <summary>
+    /// blockViewContainer control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Panel blockViewContainer;
+    
+    /// <summary>
+    /// GridView control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.UpdatePanel GridView;
+    
+    /// <summary>
+    /// graphViewContainer control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Panel graphViewContainer;
     
     /// <summary>
     /// btnOneStep control.

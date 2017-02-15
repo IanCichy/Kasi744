@@ -7,32 +7,20 @@ using System.Collections.Generic;
 public class Tile
 {
     private Button btn;
-    private int type, size;
+    private int type;
     private Point location;
-    private bool seen = false;
 
-    public Tile(int t, int x, int y, int s)
+    public Tile(int t, int x, int y)
     {
         type = t;
         location = new Point(x, y);
-        size = s;
         btn = new Button();
-
-        btn.Width = size;
-        btn.Height = size;
-        btn.BorderStyle = BorderStyle.Solid;
-        btn.BorderColor = Color.Gray;
-        btn.BorderWidth = 1;
     }
 
-    public bool isSeen()
+    public void setSize(int x, int y)
     {
-        return seen;
-    }
-
-    public void setSeen(bool b)
-    {
-        seen = b;
+        btn.Width = x;
+        btn.Height = y;
     }
 
     public void setType(int t)

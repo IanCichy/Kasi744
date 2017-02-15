@@ -14,9 +14,9 @@ public partial class Cardinals : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            world = new Map(10,10,4,getRegions(),getMapfile(), 50);
+            world = new Map(12, 10, 4, getRegions(), getMapfile());
             Session["Map"] = world;
-            updateGrid(world);
+            ClientScript.RegisterStartupScript(GetType(), "Javascript", "javascript:getPageSize();", true);
         }
         else
         {
@@ -28,33 +28,32 @@ public partial class Cardinals : System.Web.UI.Page
     protected void updateGrid(Map worldMap)
     {
         //Find the correct place to put the world on the webpage and add it to the controls
-        Form.FindControl("MapContainer").Controls.Add(((Map)Session["Map"]).getDisplay());
+        blockViewContainer.Controls.Add(((Map)Session["Map"]).getDisplay());
+        world.setMapSize(int.Parse(PageWidth.Text), int.Parse(PageHeight.Text));
     }
 
     protected int[,] getMapfile()
     {
-
         int[,] array = new int[,]
         {
-            {1,1,1,1,1,1,1,1,1,1},
-            {1,0,0,0,0,0,1,0,0,0},
-            {1,1,1,0,0,0,1,0,0,0},
-            {1,0,0,0,0,0,1,0,0,0},
-            {1,0,0,1,1,1,1,1,0,0},
-            {1,1,1,1,0,0,0,1,0,0},
-            {1,0,0,1,0,0,1,1,0,0},
-            {1,0,0,1,0,0,0,1,0,0},
-            {1,0,0,1,0,0,0,1,0,0},
-            {1,1,1,1,1,1,1,1,1,1}
+            {1,1,1,1,1,1,1,1,1,1,1,1},
+            {1,0,0,0,0,0,1,0,0,0,1,1},
+            {1,1,1,0,0,0,1,0,0,0,1,1},
+            {1,0,0,0,0,0,1,0,0,0,1,1},
+            {1,0,0,1,1,1,1,1,0,0,1,1},
+            {1,1,1,1,0,0,0,1,0,0,1,1},
+            {1,0,0,1,0,0,1,1,0,0,1,1},
+            {1,0,0,1,0,0,0,1,0,0,1,1},
+            {1,0,0,1,0,0,0,1,0,0,1,1},
+            {1,1,1,1,1,1,1,1,1,1,1,1}
         };
-
-
         return array;
     }
 
     protected Region[] getRegions()
     {
         Region[] reg = new Region[4];
+
         Region r1 = new Region(1);
         r1.addPointToRegion(new Point(1, 1));
         r1.addPointToRegion(new Point(3, 1));
@@ -123,24 +122,9 @@ public partial class Cardinals : System.Web.UI.Page
 
     protected void btnOneStep_Click(object sender, EventArgs e)
     {
-        /*
-        Random rnd = new Random();
-        int x = rnd.Next(0, world.getWidth());
-        int y = rnd.Next(0, world.getHeight());
-        int t = rnd.Next(0, 2);
-
-        world.setTileType(x, y, t);
-
-        Session["Map"] = world;
-        updateGrid(world);
-        */
         world.oneStepAlgorithm();
-
-
     }
 
-    protected void UploadFile_Click(object sender, EventArgs e)
-    {
 
-    }
+
 }
