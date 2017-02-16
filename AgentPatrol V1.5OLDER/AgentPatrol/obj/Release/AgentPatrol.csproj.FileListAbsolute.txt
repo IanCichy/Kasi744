@@ -1,0 +1,52 @@
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\ApplicationInsights.config
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\csc.exe
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\System.Collections.Immutable.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\vbc.exe
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\VBCSCompiler.exe
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\roslyn\VBCSCompiler.exe.config
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\AgentPatrol.dll.config
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\AgentPatrol.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\AgentPatrol.pdb
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.AI.Web.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.AI.WindowsServer.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.ApplicationInsights.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.AI.Web.xml
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.AI.WindowsServer.xml
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.ApplicationInsights.xml
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\obj\Release\AgentPatrol.dll
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\obj\Release\AgentPatrol.pdb
+c:\users\ian\documents\visual studio 2015\Projects\AgentPatrol\AgentPatrol\obj\Release\AgentPatrol.csprojResolveAssemblyReference.cache
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\ApplicationInsights.config
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\AgentPatrol.dll.config
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\AgentPatrol.dll
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\AgentPatrol.pdb
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.AI.Web.dll
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.ApplicationInsights.dll
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.AI.Web.xml
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\bin\Microsoft.ApplicationInsights.xml
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\obj\Release\AgentPatrol.csprojResolveAssemblyReference.cache
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\obj\Release\AgentPatrol.dll
+C:\Users\cichy.ian\Desktop\AgentPatrol\AgentPatrol\obj\Release\AgentPatrol.pdb
