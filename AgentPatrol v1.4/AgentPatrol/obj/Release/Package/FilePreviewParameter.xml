@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="Murcsp16.intra.uwlax.edu/cardinals" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^c:\\users\\ian\\documents\\visual\ studio\ 2015\\Projects\\AgentPatrol\\AgentPatrol\\obj\\Release\\Package\\PackageTmp$" />
-    <parameterEntry kind="ProviderPath" scope="setAcl" match="^c:\\users\\ian\\documents\\visual\ studio\ 2015\\Projects\\AgentPatrol\\AgentPatrol\\obj\\Release\\Package\\PackageTmp$" />
-  </parameter>
-</parameters>
