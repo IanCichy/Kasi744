@@ -1,0 +1,488 @@
+﻿body {
+    /* background-color: #0057B8; */
+    background-color: #1966ba;
+    color: #212121;
+    margin: 0;
+    text-align: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/***
+ *    ______------------------_____-------------_--------_---------------------
+ *    |-___-\----------------/--__-\-----------|-|------(_)--------------------
+ *    |-|_/-/_-_--__-_--___--|-/--\/-___--_-__-|-|_-__-_-_-_-__---___-_-__-___-
+ *    |--__/-_`-|/-_`-|/-_-\-|-|----/-_-\|-'_-\|-__/-_`-|-|-'_-\-/-_-\-'__/-__|
+ *    |-|-|-(_|-|-(_|-|--__/-|-\__/\-(_)-|-|-|-|-||-(_|-|-|-|-|-|--__/-|--\__-\
+ *    \_|--\__,_|\__,-|\___|--\____/\___/|_|-|_|\__\__,_|_|_|-|_|\___|_|--|___/
+ *    ------------__/-|--------------------------------------------------------
+ *    -----------|___/---------------------------------------------------------
+ */
+
+.pageTitle {
+    font-size: 40pt;
+    padding: 10px;
+}
+
+.form {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    /*background-color: #1966ba; */
+    background-color: #5686BA;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.preInput {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    border: 3px solid #212121;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    height: 20%;
+}
+
+.center {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    /*border: 2px solid #db5353;*/
+}
+
+.left-half {
+    position: absolute;
+    left: 2.5%;
+    width: 72.5%;
+    height: 85%;
+    /*border: 2px solid chartreuse;*/
+}
+
+.right-half {
+    position: absolute;
+    right: 2.5%;
+    width: 20%;
+    height: 80%;
+    border: 3px solid #212121;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    /*border: 5px solid mediumpurple;*/
+}
+
+.viewContainer {
+    display: inline-block;
+    /*border: 5px solid #212121;*/
+}
+
+.SearchCenter {
+    position: absolute;
+    left: 1%;
+    right: 1%;
+}
+
+.containerSearch {
+    background: #393939;
+    border: none;
+    font-size: 10pt;
+    color: #c4c4c4;
+    padding: 5px;
+    left: 7.5%;
+    position: absolute;
+    width: 80%;
+    padding-bottom:0px;
+}
+
+    .containerSearch:hover, .containerSearch:focus, .containerSearch:active {
+        outline: #db5353 3px solid;
+        -moz-outline-radius: 10px;
+    }
+
+.labelSearch {
+    left: 5%;
+    position: absolute;
+}
+
+.errorMessage {
+    color: #d13030;
+    font-weight: 600;
+}
+
+.successMessage {
+    color: #45d130;
+    font-weight: 600;
+}
+
+/***
+ *    ______-------_---_-----------------------------_____---------_---_------------------------
+ *    |-___-\-----|-|-|-|--------------------___----|_---_|-------|-|-|-|-----------------------
+ *    |-|_/-/_---_|-|_|-|_-___--_-__--___---(-_-)-----|-|-_____--_|-|_|-|__---_____--_____--___-
+ *    |-___-\-|-|-|-__|-__/-_-\|-'_-\/-__|--/-_-\/\---|-|/-_-\-\/-/-__|-'_-\-/-_-\-\/-/-_-\/-__|
+ *    |-|_/-/-|_|-|-|_|-||-(_)-|-|-|-\__-\-|-(_>--<---|-|--__/>--<|-|_|-|_)-|-(_)->--<--__/\__-\
+ *    \____/-\__,_|\__|\__\___/|_|-|_|___/--\___/\/---\_/\___/_/\_\\__|_.__/-\___/_/\_\___||___/
+ */
+
+.button {
+    border: solid #5d6062 1px;
+    color: #282828;
+    border-radius: 5%;
+    font-size: 14px;
+    transition: all 200ms ease-in-out 0s;
+    background-color: #c4c4c4;
+    width: 130px;
+    height: 30px;
+}
+
+    .button:hover, .button:focus, .button:active {
+        background-color: #5686BA;
+        border-color: #1966ba;
+    }
+
+.button-positive {
+    border: solid #5d6062 1px;
+    color: #282828;
+    border-radius: 5%;
+    font-size: 14px;
+    transition: all 200ms ease-in-out 0s;
+    background-color: #c4c4c4;
+    width: 130px;
+    height: 30px;
+}
+
+    .button-positive:hover, .button-positive:focus, .button-positive:active {
+        background-color: #56ba59;
+        border-color: #19ba1e;
+    }
+
+.button-negative {
+    border: solid #5d6062 1px;
+    color: #282828;
+    border-radius: 5%;
+    font-size: 14px;
+    transition: all 200ms ease-in-out 0s;
+    background-color: #c4c4c4;
+    width: 130px;
+    height: 30px;
+}
+
+    .button-negative:hover, .button-negative:focus, .button-negative:active {
+        background-color: #db5353;
+        border-color: #282828;
+    }
+
+.button-warning {
+    border: solid #7e7e7e 1px;
+    color: #282828;
+    border-radius: 5%;
+    font-size: 14px;
+    transition: all 200ms ease-in-out 0s;
+    border-color: #5d6062;
+    background-color: #c4c4c4;
+    width: 130px;
+    height: 30px;
+    left: 0%;
+    position: absolute;
+}
+
+    .button-warning:hover, .button-warning:focus, .button-warning:active {
+        background-color: #de9150;
+        border-color: #d57e35;
+    }
+
+.button-information {
+    border: solid #5d6062 1px;
+    color: #282828;
+    border-radius: 5%;
+    font-size: 14px;
+    transition: all 200ms ease-in-out 0s;
+    background-color: #c4c4c4;
+    width: 130px;
+    height: 30px;
+}
+
+    .button-information:hover, .button-information:focus, .button-information:active {
+        background-color: #d7cd5c;
+        border-color: #a48d04;
+    }
+
+.button-Disabled {
+    border: solid #7e7e7e 1px;
+    color: #282828;
+    border-radius: 5%;
+    font-size: 14px;
+    transition: all 200ms ease-in-out 0s;
+    border-color: #5d6062;
+    background-color: #c4c4c4;
+    width: 130px;
+    height: 30px;
+    opacity: .5;
+}
+
+.txtSaveFile {
+    width: 80%;
+}
+
+.txtStepsNumber {
+    width: 40%;
+}
+
+.visible {
+}
+
+.hidden {
+    display: none;
+}
+
+/***
+ *    ______-_------------_------_---_-_---------------
+ *    |-___-\-|----------|-|----|-|-|-(_)--------------
+ *    |-|_/-/-|-___---___|-|-__-|-|-|-|_--_____------__
+ *    |-___-\-|/-_-\-/-__|-|/-/-|-|-|-|-|/-_-\-\-/\-/-/
+ *    |-|_/-/-|-(_)-|-(__|---<--\-\_/-/-|--__/\-V--V-/-
+ *    \____/|_|\___/-\___|_|\_\--\___/|_|\___|-\_/\_/--
+ *    -------------------------------------------------
+ */
+.blockViewOpenSpace {
+    background-color: #e1e1e1;
+    border: solid 1px #282828;
+}
+
+.blockViewClosedSpace {
+    border: solid 1px #282828;
+    background-color: #1E1E1E;
+}
+
+.blockViewVisitedSpace {
+    border: solid 1px #282828;
+    background-color: #db5353;
+}
+
+.blockViewAgent {
+    background-color: #5686BA;
+    border: 5px solid #1966ba;
+}
+
+/***
+ *    -_____-----------------_-------_---_-_---------------
+ *    |--__-\---------------|-|-----|-|-|-(_)--------------
+ *    |-|--\/_-__-__-_-_-__-|-|__---|-|-|-|_--_____------__
+ *    |-|-__|-'__/-_`-|-'_-\|-'_-\--|-|-|-|-|/-_-\-\-/\-/-/
+ *    |-|_\-\-|-|-(_|-|-|_)-|-|-|-|-\-\_/-/-|--__/\-V--V-/-
+ *    -\____/_|--\__,_|-.__/|_|-|_|--\___/|_|\___|-\_/\_/--
+ *    ----------------|-|----------------------------------
+ *    ----------------|_|----------------------------------
+ */
+.graphViewNode {
+    border-radius: 100%;
+    border: solid 3px #282828;
+    background-color: #ffffff;
+    display: inline-grid;
+}
+
+.graphViewNodeVisited {
+    border-radius: 100%;
+    border: solid 3px #282828;
+    background-color: #db5353;
+    display: inline-grid;
+}
+
+.graphViewSpacer {
+    background-color: transparent;
+    border: none;
+    display: inline-grid;
+}
+
+.graphViewHorizontalConnector {
+    background-color: #212121;
+    position: relative;
+    top: -5px;
+}
+
+.graphViewVerticalConnector {
+    background-color: #212121;
+    position: relative;
+    top: 2px;
+}
+
+.graphViewLabel {
+    position: relative;
+    left: -40px;
+    top: -15px;
+    font-size: 10pt;
+    width: 60px;
+    color: black;
+}
+
+.graphViewAgentNumber {
+    position: relative;
+    font-size: 10pt;
+    top: -13px;
+    left: -14px;
+    color: black;
+}
+
+.graphViewLabelSpacer {
+    position: relative;
+    top: -15px;
+    left: 15px;
+    color: transparent;
+    font-size: 10pt;
+    width: 50px;
+}
+
+.tableClear {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+    .tableClear tr, .tableClear td {
+        color: transparent;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+.graphViewLeft {
+    position: absolute;
+    right: 32.5%;
+    width: 67.5%;
+}
+
+.graphViewRight {
+    position: absolute;
+    left: 70%;
+    width: 10%;
+}
+
+.trgLst {
+    resize: none;
+}
+
+
+
+/***
+ *    -_____------_-----_-_---_-_---------------
+ *    |--__-\----(_)---|-|-|-|-(_)--------------
+ *    |-|--\/_-__-_--__|-|-|-|-|_--_____------__
+ *    |-|-__|-'__|-|/-_`-|-|-|-|-|/-_-\-\-/\-/-/
+ *    |-|_\-\-|--|-|-(_|-\-\_/-/-|--__/\-V--V-/-
+ *    -\____/_|--|_|\__,_|\___/|_|\___|-\_/\_/--
+ */
+.gridView {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+    .gridView tr, .gridView td, .gridView col {
+        border: 1px solid #212121;
+        padding: 2px;
+    }
+
+    .gridView th a {
+        color: white;
+        /*Stlye for Header Arrows During Sort*/
+        padding-right: 8px;
+        padding-left: 8px;
+        text-decoration: none;
+    }
+
+        .gridView th a:hover, .gridView th a:focus, .gridView th a:active {
+            /*Stlye for Header Arrows During Sort*/
+            padding-right: 8px;
+            padding-left: 8px;
+            text-decoration: underline;
+        }
+
+.header-gv {
+    background-color: #212121;
+}
+
+.row-gv {
+    background-color: #d9d8d8;
+}
+
+.alt-row-gv {
+    background-color: #f0f0f0;
+}
+
+/*
+PAGER
+*/
+
+tr.pager-row td {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+    tr.pager-row td a {
+        color: #000;
+        padding: 0px 5px;
+        text-decoration: none;
+    }
+
+        tr.pager-row td a:hover {
+            color: #d3d3d3;
+            padding: 0px 5px;
+            font-weight: 600;
+        }
+
+    tr.pager-row td span {
+        border: none;
+        font-weight: bold;
+        color: #000;
+        padding: 0px 6px;
+    }
+
+/*
+PAGER
+
+SORTED
+*/
+
+.Asc_Des_Header {
+    background-color: #333333;
+    background-size: 16px 8px;
+}
+
+.Asc_Des_Cell {
+    background-color: #db5353;
+}
+
+/*
+SORTED
+
+LINKS
+*/
+
+.linkbutton-Gridview {
+    color: #000;
+    border-radius: 5%;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+}
+
+    .linkbutton-Gridview:hover, .linkbutton-Gridview:focus, .linkbutton-Gridview:active {
+        transition: all 200ms ease-in-out 0s;
+        color: #db5353;
+    }
+
+.historyNoData {
+    width: 0%;
+    height: 0%;
+}
+
+.historyData {
+    width: 80%;
+    height: 40%;
+}
